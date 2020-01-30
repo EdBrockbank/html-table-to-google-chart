@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Stuff</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap & Jquery/Bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="Bootstrap & Jquery/Bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="Bootstrap & Jquery/Bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="table-responsive">
+                    <table id="chart_data" class="table" data-chart-height="400" data-chart-title="StarWars" data-chart-piehole="0.5">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Size</th>
+                            <th>Weight</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Darth Maul</td>
+                            <td>160</td>
+                            <td>270</td>
+                        </tr>
+                        <tr>
+                            <td>Darth Vader</td>
+                            <td>190</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>R2-D2</td>
+                            <td>120</td>
+                            <td>360</td>
+                        </tr>
+                        <tr>
+                            <td>Yoda</td>
+                            <td>104</td>
+                            <td>174</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn btn-light" onclick="GChart.create('#chart_data','#chart_here','PieChart','tbody>tr',false)"><i class="fas fa-chart-pie"></i></button>
+                <button type="button" class="btn btn-light" onclick="GChart.create('#chart_data','#chart_here','ColumnChart','tbody>tr',false)"><i class="fas fa-chart-bar"></i></button>
+                <button type="button" class="btn btn-light" onclick="GChart.create('#chart_data','#chart_here','LineChart','tbody>tr',false)"><i class="fas fa-chart-line"></i></button>
+                <button type="button" class="btn btn-light" onclick="GChart.create('#chart_data','#chart_here','AreaChart','tbody>tr',false)"><i class="fas fa-chart-area"></i></button>
+            </div>
+            <div class="col-md-6">
+                <div id="chart_here"></div>
+            </div>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="Bootstrap & Jquery/Jquery/Jquery.js"></script>
+    <!-- Popper Js -->
+    <script src="Bootstrap & Jquery/Bootstrap/popper-js/popper.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="Bootstrap & Jquery/Bootstrap/js/bootstrap.js"></script>
+    <script src="Bootstrap & Jquery/Bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3573c874de.js" crossorigin="anonymous"></script>
+    <!-- Google Charts API -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Custom Js -->
+    <script src="js/GChart.js"></script>
+</body>
+</html>
